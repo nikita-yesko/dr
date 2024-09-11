@@ -1,0 +1,50 @@
+.map {
+    
+}
+.map-title {
+    font-family: "InterTight-Medium";
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.63rem;
+    text-align: left;
+    fill: #000000;
+}
+.map-text {
+    font-family: "InterTight-Regular";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.24rem;
+    text-align: left;
+    fill: #4F4F4F;
+}
+.map-btn-text {
+    font-family: "InterTight-Medium";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    fill: #8D89F1;
+}
+.map-interactive__block > *:not(.map-interactive__zone) {
+    opacity: 0;
+}
+.map-interactive__zone {
+    cursor: pointer;
+    fill-opacity: 0 !important;
+}
+.map-interactive__block:hover {
+    cursor: pointer;
+}
+.map-interactive__block:hover > * {
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+.map-interactive__btn:hover rect {
+    fill: #8A93EC;
+}
+.map-interactive__btn:hover .map-btn-text {
+    fill: #ffffff;
+}
+.map-interactive__btn:hover path {
+    stroke: #ffffff;
+}

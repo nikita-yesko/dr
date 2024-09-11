@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Reddis</title>
+    <link rel="stylesheet" href="../dist/css/index.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <body>
+        <header id="header" class="header ">
+            <div class="header__inner">
+                <div class="header__content justify-between container">
+                    <a href="/" class="header__logo"><span>Планета</span> симптомов</a>
+                    <button class="header__menu"></button>
+                    <nav class="flex items-center border-[1px] header__nav ">
+                        <li><a href="#">Город Больск</a></li>
+                        <li class="dropdown"><a href="#">Лаборатория<div class="dropdown__arrow"></div></a>
+                            <ul class="dropdown__list">
+                                <li><a href="#">База знаний</a></li>
+                                <li><a href="#">Самоконтроль</a></li>
+                                <li><a href="#">Интерактив</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Аптека</a></li>
+                        <li><a href="#">Программа лояльности</a></li>
+                    </nav>
+                    <a href="/pages/profile" class="header__profile flex items-center">
+                        <div class="header__profile-icon mr-4 rounded-full flex items-center justify-center w-[40px] h-[40px] bg-blur">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <span class="text-2xl">Вход</span>
+                    </a>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="container-md mt-[36px] lg:mt-[130px]">
+                <a href="../" class="button button_small button-ghost mb-8"><i class="fa-solid fa-angle-left"></i> Назад</a>
+                <div class="breadcrumbs mb-12">
+                    <a class="mb-4" href="#">Город Больск</a>
+                    <a class="mb-4" href="#">Зубная боль</a>
+                    <a class="mb-4" href="#">Название статьи</a>
+                </div>
+                <div class="mb-24">
+                    <section class="hurt-article__top flex flex-col md:flex-row items-center mb-[40px] rounded-[30px]">
+                        <div class="pl-10 pr-10 pt-20 pb-[135px] lg:p-[29px] w-[100%] lg:w-[55.21%] ">
+                            <h1 class="mb-[15px]  font-intertight-medium leading-tight text-center lg:text-left text-[32px] lg:text-[48px]">Давайте знакомиться,<br> Я -Зубная боль</h1>
+                            <div class="flex items-center justify-center lg:justify-left">
+                                <div class="mr-[5px] font-intertight-medium text-[14px]">Время чтения:</div>
+                                <div class="font-intertight-medium p-[10px] bg-white rounded-[10px]"><span class="text-linear-bg">3 минуты</span></div>
+                            </div>
+                        </div>
+                        <div class="relative w-[100%] lg:w-[44.79%] rounded-[30px]">
+                            <img class="w-[100%] rounded-[30px]" src="../dist/img/hurt-article-poster.png" alt="Article poster"/>
+                            <div class="hurt-article__top-quote absolute">
+                                Привет! Я Зубная Боль, и мы с вами, наверняка, уже встречались.
+                            </div>
+                        </div>
+                    </section>
+                    <div class="flex flex-col-reverse md:flex-row mb-[40px]">
+                        <div class="mt-[10px] pt-[10px] md:mr-[15px] md:pr-[15px] border-t border-t-1 md:border-t-0 md:border-r-2" style="border-color: #B6B6B6;">
+                            <img class="min-w-[57px] w-[57px] h-[57px]" src="../dist/img/hurt-article-character.png" alt="Character icon"/>
+                        </div>
+                        <div class="text text-[#4F4F4F]">
+                            Я как загадочный гость, которого вы не приглашали, но он пришел и на него просто невозможно не обращать внимания. Обожаю навязываться и быть назойливой! 
+                            Со мной сложно справиться, поэтому вам наверняка понадобится мощное лекарство или помощь врача.
+                        </div>
+                    </div>
+                    <div class="mb-[40px] md:mb-[60px] page-free-styling">
+                        <h3>Откуда я берусь?</h3>
+                        <p style="color: #4f4f4f;">
+                            Хороший вопрос. Он уходит корнями прямо в ваше собственное тело! Потому что я чаще всего связана с проблемами с деснами или плохим уходом за зубами. А еще меня вызывает разрушение эмали или кариес. Почему-то люди не любят, когда я провожу с ними много времени. Идут к врачу, просят избавить от меня. Не понимаю, чем я это заслужила? Я же к ним со всей душой! 
+                        </p>
+                    </div>
+                    <section class="hurt-article__cards mb-[40px]">
+                        <div class="hurt-article__card flex flex-wrap justify-between rounded-[30px]">
+                            <div class="mb-5 md:mb-0 w-full md:w-[40.3%]">
+                                <h4 class="title-h4">Чем я отличаюсь от другой боли?</h4>
+                            </div>
+                            <div class="w-full md:w-[56.72%]">
+                                <div class="text-item">
+                                    <div class="icon">
+                                        <img src="../dist/img/icons/duration.svg">
+                                    </div>
+                                    <h5 class="title-h5 mb-[10px]">Продолжительность:</h5>
+                                    <div class="text opacity-70 text-[#4F4F4F]">
+                                        <p>Я долгая, как анаконда и приятная, как гигантская сороконожка. Если меня не остановить, я не исчезну сама ни за что!  </p>
+                                    </div>
+                                </div>
+                                <div class="text-item">
+                                    <div class="icon">
+                                        <img src="../dist/img/icons/intensity.svg">
+                                    </div>
+                                    <h5 class="title-h5 mb-[10px]">Интенсивность:</h5>
+                                    <div class="text opacity-70 text-[#4F4F4F]">
+                                        <p>К могу быть невероятно сильной или могу затаиться и мучить вас потихоньку, 
+                                            медленно и настырно. </p>
+                                    </div>
+                                </div>
+                                <div class="text-item">
+                                    <div class="icon">
+                                        <img src="../dist/img/icons/character.svg">
+                                    </div>
+                                    <h5 class="title-h5 mb-[10px]">Характер:</h5>
+                                    <div class="text opacity-70 text-[#4F4F4F]">
+                                        <p>В зависимости от настроения я могу быть монотонной или пульсирующей, острой и давящей. Поэтому меня бывает так трудно описать. 
+                                            То есть, я неописуемая! Но я просто Зубная Боль!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hurt-article__card flex flex-wrap justify-between rounded-[30px]">
+                            <div class="mb-5 md:mb-0 w-full md:w-[40.3%]">
+                                <h4 class="title-h4">Почему стоит обращать на меня внимание?</h4>
+                            </div>
+                            <div class="w-full md:w-[56.72%]">
+                                <div class="text-item">
+                                    <div class="icon">
+                                        <img src="../dist/img/icons/attribute.svg">
+                                    </div>
+                                    <h5 class="title-h5 mb-[10px]">Признак заболеваний:</h5>
+                                    <div class="text opacity-70 text-[#4F4F4F]">
+                                        <p>Я обычно очень занята другими делами и не посещаю вас просто так. Зато если у вас возникают проблемы с зубами или деснами, я с удовольствием к вам наведаюсь. Стоматит, кариес, пародонтит — практически все стоматологические заболевания связаны со мной. А еще я могу появляться после хирургических операций. Удалили зубы мудрости? Я тут как тут! </p>
+                                    </div>
+                                </div>
+                                <div class="text-item">
+                                    <div class="icon">
+                                        <img src="../dist/img/icons/care.svg">
+                                    </div>
+                                    <h5 class="title-h5 mb-[10px]">Забота о себе</h5>
+                                    <div class="text opacity-70 text-[#4F4F4F]">
+                                        <p>Я обычно очень занята другими делами и не посещаю вас просто так. Зато если у вас возникают проблемы с зубами или деснами, я с удовольствием к вам наведаюсь. Стоматит, кариес, пародонтит — практически все стоматологические заболевания связаны со мной. А еще я могу появляться после хирургических операций. Удалили зубы мудрости? Я тут как тут! </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="mb-[100px] page-free-styling">
+                        <h3>Чужая боль спать не мешает</h3>
+                        <p>Интересно, что боль часто воспринимается индивидуально. Одни люди могут легко переносить определенные виды боли, в то время как другие испытывают сильный дискомфорт даже при малейших царапинах. Это связано с различиями в пороге болевой чувствительности.</p>
+                        <p>Важно помнить что болевой опыт — это неотъемлемая часть нашей жизни. Это не просто физическое ощущение, но и сложный механизм, который защищает нас и предупреждает о проблемах. Понимание того, как тело реагирует на боль, помогает нам лучше заботиться о себе и своем здоровье.</p>
+                    </div>
+
+                   <section class="hurt-article__trap flex flex-wrap flex-col-reverse md:flex-row justify-between items-center rounded-[20px] mb-[100px]">
+                        <div class="text-block">
+                            <h4 class="title-h4 text-white mb-[15px]">Поставьте ловушку для боли и узнайте как с ней бороться</h4>
+                            <a href="/" class="button button-white-icon button-icon-left mb-10"><img src="../dist/img/icons/trap-grey.svg" /><span>Поставить ловушку </span></a>
+                        </div>
+                        <div class="character relative">
+                            <div class="radius"></div>
+                            <div class="image absolute bottom-0"><img src="../dist/img/hurt-article-big-character.png"/></div>
+                            <div class="tip absolute">Ааааа, уберите это, боюсь!</div>
+                            
+                        </div>
+                   </section>
+                   <div class="post mb-[50px] md:mb-[170px]">
+                    <div class="tag tag-indigo tag-indigo_mobile mb-6">Читайте также</div>
+                    <h2 class="leading-tight title-h2 mb-10">Название следующей статьи находится здесь</h2>
+                    <!-- блок без доступа -->
+                    <div class="blocked-content  [&amp;>.page-free-styling]:select-none">
+                        <span class="text-[#7f7f7f] flex items-center mb-[15px] text-[14px]"><img class="mr-[7px]" src="../dist/img/icons/interface-lock.svg"></img> Сейчас недоступно</span>
+                        <a href="/" class="button button-black mb-[50px]">Открыть доступ <i class="fa-solid fa-angle-right ml-4"></i></a>
+                        <div class="page-free-styling blur-content">
+                            <p>Боль — удивительный механизм нашего тела, предназначенный для предупреждения и защиты. Когда мы чувствуем боль, вступают в действие сложные физиологические процессы, которые задействуют нервы, мозг и другие внутренние органы.</p>
+                            <p>В центре этого механизма стоит нервная система, чувствительные нервные окончания, или ноцицепторы. Когда ткани подвергаются повреждению или воспалению, ноцицепторы отправляют сигналы в мозг. Ноцицепторы — своего рода стражи, предупреждающие нас о проблемах.</p>
+                        </div>
+                    </div>
+                    <!-- блок с доступом -->
+                    <!-- <div class="unblocked-content">
+                        <div class="page-free-styling">
+                            <p>Боль — удивительный механизм нашего тела, предназначенный для предупреждения и защиты. Когда мы чувствуем боль, вступают в действие сложные физиологические процессы, которые задействуют нервы, мозг и другие внутренние органы.</p>
+                            <p>В центре этого механизма стоит нервная система, чувствительные нервные окончания, или ноцицепторы. Когда ткани подвергаются повреждению или воспалению, ноцицепторы отправляют сигналы в мозг. Ноцицепторы — своего рода стражи, предупреждающие нас о проблемах.</p>
+                        </div>
+                        <a href="" class="button button-indigo mb-10">Читать полностью <i class="fa-solid fa-angle-right ml-4"></i></a>
+                    </div> -->
+                </div>
+
+                </div>
+            </div>
+        </main>
+        <div class="footer__wrapper">
+            <section class="footer__warning hidden lg:block absolute bottom-full w-full p-[5rem_0_1.8rem]">
+                <div class="container-big">
+                    <div class="footer__warning-text">
+                        ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМО ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ ПО МЕДИЦИНСКОМУ ПРИМЕНЕНИЮ ИЛИ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+                    </div>
+                </div>
+            </section>
+            <footer class="footer bg-black">
+                <div class="container-big">
+                    <div class="footer__inner">
+                        <div class="footer__top flex flex-wrap justify-between items-start lg:items-center flex-col lg:flex-row">
+                            <div class="footer__top-left flex flex-col lg:flex-row">
+                                <a href="/" class="footer__logo mb-[18px] lg:mb-0"><img src="../dist/img/icons/white-logo.svg" alt="Logo"/></a>
+                                <div class="footer__allowed-age flex items-center justify-center rounded-full mb-[18px] lg:mb-0">7+</div>
+                            </div>
+                            <div class="footer__top-right ">
+                                <div class="footer__social flex items-center">
+                                    <div class="footer__social-text">Поделиться:</div>
+                                    <ul class="footer__social-list flex items-center">
+                                        <li><a href="#"><img src="../dist/img/icons/ok.svg"/></a></li>
+                                        <li><a href="#"><img src="../dist/img/icons/vk.svg" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__warning-text mb-[20px] lg:hidden">
+                            ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМО ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ ПО МЕДИЦИНСКОМУ ПРИМЕНЕНИЮ ИЛИ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+                        </div>
+                        <div class="footer__center flex justify-between flex-wrap lg:flex-1">
+                            <ul class="footer__links">
+                                <li><a href="#">Лицензия</a></li>
+                                <li><a href="#">Рекламодатель</a></li>
+                                <li><a href="#">ООО</a></li>
+                            </ul>
+                            <ul class="footer__docs">
+                                <li><a href="#">Политика по работе с персональными данными и конфиденциальности</a></li>
+                                <li><a href="#">Согласие на обработку персональных данных</a></li>
+                                <li><a href="#">Политика использования файлов Cookie ООО «Др. Редди’c Лабороторис»</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__copyright">
+                            <p>Все права защищены <script>document.write(new Date().getFullYear())</script>г.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <button class="footer__top-arrow" data-target="html" id="scroll-to-top" >
+                <img src="../dist/img/icons/arrow-top.svg" alt="Кнопка перемещения наверх страницы">
+            </button>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../dist/js/index.js"></script>
+</html>

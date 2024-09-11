@@ -1,0 +1,144 @@
+.button {
+  display: block;
+  width: max-content;
+  height: max-content;
+  padding: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: var(--colorBlack);
+  text-align: center;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+
+  &_small {
+    font-size: 1.4rem;
+    border-radius: 6rem;
+    padding: 0.7rem 1.5rem;
+  }
+
+  @include mobile {
+    font-size: 1.55rem;
+    line-height: 150%;
+    padding: 1rem 1.5rem;
+  }
+
+  &.button-ghost {
+    background: none;
+    border: 1px solid var(--colorGrey);
+    color: var(--colorGrey);
+    &:hover {
+      background: var(--buttonBlueHover);
+      border: 1px solid var(--buttonBlueHover);
+      color: var(--colorMain);
+    }
+    &-indigo{
+      color: rgba(145, 131, 246, 1);
+      border: 1px solid rgba(145, 131, 246, 1);
+      &:hover {
+        background: linear-gradient(48deg, #AA9BF5 5.7%, rgba(153, 136, 240, 0.00) 103.13%), linear-gradient(138deg, #7696E6 0%, #7A93E7 122.84%);
+        border: 1px solid rgba(145, 131, 246, 1);
+        color: var(--colorMain);
+      }
+    }
+  }
+
+  &.button-blue {
+    background: var(--colorBlue);
+    &:hover {
+      background: var(--buttonBlueHover);
+    }
+  }
+
+  &.button-indigo {
+    background: var(--buttonBlueHover);
+    color: var(--colorMain);
+    &:hover {
+      background: linear-gradient(48deg, #AA9BF5 5.7%, rgba(153, 136, 240, 0.00) 103.13%), linear-gradient(138deg, #7696E6 0%, #7A93E7 122.84%);
+    }
+  }
+
+  &.button-black {
+    background: var(--colorBlack);
+    color: var(--colorMain);
+    &:hover {
+      background: linear-gradient(48deg, #C2B6FF 5.7%, rgba(177, 161, 255, 0.00) 103.13%), linear-gradient(138deg, #96B4FF 0%, #A6BAFF 122.84%);
+    }
+  }
+
+  &.button-white {
+    background: var(--gradientWhite);
+    color: var(--buttonWhiteColor);
+    &:hover {
+      background: var(--buttonBlackHover);
+      color: var(--colorMain);
+    }
+  }
+  &.button-white-fill {
+    background: #FFF;
+    color: var(--buttonWhiteColor);
+    &:hover {
+      background: var(--buttonBlackHover);
+      color: var(--colorMain);
+    }
+  }
+  &.button-white-icon {
+    display: flex;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    color: var(--colorTextGrey);
+    img {
+      transition-duration: all .3s ease;
+    }
+    &:hover {
+      background: var(--buttonBlackHover);
+      color: var(--colorMain);
+      img {
+        filter: brightness(0) saturate(100%) invert(100%);
+      }
+    }
+  }
+
+  &.button-blur {
+    background: var(--blur);
+    color: var(--colorMain);
+    &:hover {
+      background: var(--buttonBlackHover);
+      color: var(--colorMain);
+    }
+  }
+  &.button-blur-dark {
+    background: var(--blur);
+    color: var(--colorTextGrey);
+    &:hover {
+      background: var(--buttonBlackHover);
+      color: var(--colorTextGrey);
+    }
+  }
+  &.button-blur-dark-prize {
+    background: rgba(241, 243, 254, 0.7);
+    
+    backdrop-filter: blur(20px);
+    color: #000000;
+    &.selected{
+      background-color: #FFFFFF;
+    }
+    &:hover {
+      background: var(--buttonBlackHover);
+      color: var(--colorTextGrey);
+    }
+  }
+  &.button-arrow {
+    position: relative;
+  }
+  &.button-icon-left i, &.button-icon-left img {
+    margin-right: .7rem;
+  }
+  &.button-icon-right i, &.button-icon-right img {
+    margin-left: .7rem;
+  }
+}

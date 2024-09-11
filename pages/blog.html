@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Reddis</title>
+    <link rel="stylesheet" href="../dist/css/index.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <body>
+        <header id="header" class="header ">
+            <div class="header__inner">
+                <div class="header__content justify-between container">
+                    <a href="/" class="header__logo"><span>Планета</span> симптомов</a>
+                    <button class="header__menu"></button>
+                    <nav class="flex items-center border-[1px] header__nav ">
+                        <li><a href="#">Город Больск</a></li>
+                        <li class="dropdown"><a href="#">Лаборатория<div class="dropdown__arrow"></div></a>
+                            <ul class="dropdown__list">
+                                <li><a href="#">База знаний</a></li>
+                                <li><a href="#">Самоконтроль</a></li>
+                                <li><a href="#">Интерактив</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Аптека</a></li>
+                        <li><a href="#">Программа лояльности</a></li>
+                    </nav>
+                    <a href="/pages/profile" class="header__profile flex items-center">
+                        <div class="header__profile-icon mr-4 rounded-full flex items-center justify-center w-[40px] h-[40px] bg-blur">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <span class="text-2xl">Вход</span>
+                    </a>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="blog__top responsive-backgound-url bg-cover w-[100vw]  lg:mt-0 h-auto lg:h-[700px] lg:h-[760px] rounded-t-[30px] lg:rounded-t-[0] rounded-b-[30px] lg:rounded-b-[60px] overflow-hidden lg:flex items-center"
+                style="background-size: cover !important;"
+                data-bg-mobile="../dist/img/backgrounds/blog-mobile.png" 
+                data-bg-desktop="../dist/img/backgrounds/blog-desktop.png"
+            >
+                <div class="container flex items-end justify-between h-[100%] lg:flex lg:mt-24 lg:mt-0">
+                    <div class="hidden lg:block lg:w-[45.05%]"><img class="" src="../dist/img/blog-hero-desktop.png" /></div>
+                    <div class="blog__top-info w-[100%] lg:w-[49.09%] pt-[56px] pb-[135px] lg:pt-[145px] lg:pb-[130px] ">
+                        
+                        <div class="blog__top-links justify-center lg:justify-start flex mb-[14px]">
+                            <a href="../" class="blog__top-link button button_small button-icon-left button-blur-dark mr-[10px]">
+                                <i class="fa-solid text-white fa-angle-left"></i>Назад
+                            </a>
+                            <a href="../" class="blog__top-link button button_small button-icon-right button-blur-dark">В лабораторию
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <img class="lg:hidden mr-auto ml-auto mb-[20px]" src="../dist/img/blog-hero-mobile.png"/>
+                        <h1 class="section__heading sm:text-center lg:text-left text-black mb-6">Боль в спине</h1>
+                        <div class="blog__top-description">
+                            <div class="blog__top-description-item items-center lg:items-start flex-col lg:flex-row flex mb-[15px] lg:mb-[20px]">
+                                <div class="label w-auto max-w-max  lg:ml-0 lg:mr-[20px] p-[10px] rounded-[10px]"><span>Характеристика</span></div>
+                                <div class="text text-center lg:text-left text-black">Острая или хроническая, тупая или невыносимая. <br>Не понимает шуток.</div>
+                            </div>
+                            <div class="blog__top-description-item items-center lg:items-start flex-col lg:flex-row flex mb-[15px] lg:mb-[20px] ">
+                                <div class="label w-auto max-w-max  lg:ml-0 lg:mr-[20px] p-[10px] rounded-[10px]"><span>Способности</span></div>
+                                <div class="text text-center lg:text-left text-black">Не дает уснуть, мешает думать, портит <br>настроение и ломает планы</div>
+                            </div>
+                            <div class="blog__top-description-item justify-center lg:justify-start flex items-center">
+                                <div class="label flex items-center mr-[16px] lg:mr-[20px] p-[10px] rounded-[10px]"><img class="mr-[9px]" src="../dist/img/icons/trap.svg" /><span>Ловушка для боли</span></div>
+                                <div class="relative text text-black">
+                                    <a class="link flex items-center"><span class="mr-[10px] underline">Найз Активгель</span> <img src="../dist/img/icons/link.svg" /></a>
+                                    <div class="blog__top-description-tip absolute"><span>Хочу узнать больше!</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <section class="section">
+
+                <div class="container !max-w-[1200px] lg:mt-0">
+                    <div class="flex flex-wrap items-center mb-10">
+                        <h2 class="mb-[20px] lg:mb-0 font-intertight-medium leading-tight text-7xl  mr-10 text-[30px] lg:text-[48px]">Каталог статей</h2>
+                        <a class="button button-ghost button-arrow-right rounded-[60px] "><span class="mr-[10px]">Больше в лаборатории</span><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <section class="blog__cards-wrapper">
+                    <div class="blog__cards flex flex-wrap justify-between [&>.blog__card:nth-child(3n)]:mr-0 mb-[20px]">
+                        <div class="blog__card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(33%-1.5rem)] mb-[20px] md:mb-0 bg-white p-[2px] rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                            <img src="../dist/img/blog-card.png" alt="title" class="object-cover w-[100%] h-[295px] rounded-[20px]">
+                            <div class="info-block relative  mt-[-17px] rounded-[20px] bg-white">
+                                <div class="flex items-center mb-6">
+                                    <div class="pt-[7px] pb-[7px] pl-[10px] pr-[10px] tag tag-violet rounded-[10px] mr-[20px]"><i class="fa-regular fa-star mr-2"></i> Новое</div>
+                                    <div class="flex items-center text-2xl"><img class="w-[23px] object-cover mr-2" src="../dist/img/icons/coin.svg"><span class="opacity-60 text-[14px] ">+100 монеток</span></div>
+                                </div>
+                                <h4 class="title">Почему миллениалы не любят дантистов и почему мне это так нравится</h4>
+                                <a href="/" class="button button-indigo py-6 group-hover:block mt-8">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog__card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(33%-1.5rem)] mb-[20px] md:mb-0 bg-white p-[2px] rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                            <img src="../dist/img/blog-card.png" alt="title" class="object-cover w-[100%] h-[295px] rounded-[20px]">
+                            <div class="info-block relative  mt-[-17px] rounded-[20px] bg-white">
+                                <div class="flex items-center mb-6">
+                                    <div class="pt-[7px] pb-[7px] pl-[10px] pr-[10px] tag tag-violet rounded-[10px] mr-[20px]"><i class="fa-regular fa-star mr-2"></i> Новое</div>
+                                    <div class="flex items-center text-2xl"><img class="w-[23px] object-cover mr-2" src="../dist/img/icons/coin.svg"><span class="opacity-60 text-[14px] ">+100 монеток</span></div>
+                                </div>
+                                <h4 class="title">Почему миллениалы не любят дантистов и почему мне это так нравится</h4>
+                                <a href="/" class="button button-indigo py-6 group-hover:block mt-8">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog__card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(33%-1.5rem)] mb-[20px] md:mb-0 bg-white p-[2px] rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                            <img src="../dist/img/blog-card.png" alt="title" class="object-cover w-[100%] h-[295px] rounded-[20px]">
+                            <div class="info-block relative  mt-[-17px] rounded-[20px] bg-white">
+                                <div class="flex items-center mb-6">
+                                    <div class="pt-[7px] pb-[7px] pl-[10px] pr-[10px] tag tag-violet rounded-[10px] mr-[20px]"><i class="fa-regular fa-star mr-2"></i> Новое</div>
+                                    <div class="flex items-center text-2xl"><img class="w-[23px] object-cover mr-2" src="../dist/img/icons/coin.svg"><span class="opacity-60 text-[14px] ">+100 монеток</span></div>
+                                </div>
+                                <h4 class="title">Почему миллениалы не любят дантистов и почему мне это так нравится</h4>
+                                <a href="/" class="button button-indigo py-6 group-hover:block mt-8">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog__card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(33%-1.5rem)] mb-[20px] md:mb-0 bg-white p-[2px] rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                            <img src="../dist/img/blog-card.png" alt="title" class="object-cover w-[100%] h-[295px] rounded-[20px]">
+                            <div class="info-block relative  mt-[-17px] rounded-[20px] bg-white">
+                                <div class="flex items-center mb-6">
+                                    <div class="pt-[7px] pb-[7px] pl-[10px] pr-[10px] tag tag-violet rounded-[10px] mr-[20px]"><i class="fa-regular fa-star mr-2"></i> Новое</div>
+                                    <div class="flex items-center text-2xl"><img class="w-[23px] object-cover mr-2" src="../dist/img/icons/coin.svg"><span class="opacity-60 text-[14px] ">+100 монеток</span></div>
+                                </div>
+                                <h4 class="title">Почему миллениалы не любят дантистов и почему мне это так нравится</h4>
+                                <a href="/" class="button button-indigo py-6 group-hover:block mt-8">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog__card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(33%-1.5rem)] mb-[20px] md:mb-0 bg-white p-[2px] rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                            <img src="../dist/img/blog-card.png" alt="title" class="object-cover w-[100%] h-[295px] rounded-[20px]">
+                            <div class="info-block relative  mt-[-17px] rounded-[20px] bg-white">
+                                <div class="flex items-center mb-6">
+                                    <div class="pt-[7px] pb-[7px] pl-[10px] pr-[10px] tag tag-violet rounded-[10px] mr-[20px]"><i class="fa-regular fa-star mr-2"></i> Новое</div>
+                                    <div class="flex items-center text-2xl"><img class="w-[23px] object-cover mr-2" src="../dist/img/icons/coin.svg"><span class="opacity-60 text-[14px] ">+100 монеток</span></div>
+                                </div>
+                                <h4 class="title">Почему миллениалы не любят дантистов и почему мне это так нравится</h4>
+                                <a href="/" class="button button-indigo py-6 group-hover:block mt-8">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog__card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(33%-1.5rem)] mb-[20px] md:mb-0 bg-white p-[2px] rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                            <img src="../dist/img/blog-card.png" alt="title" class="object-cover w-[100%] h-[295px] rounded-[20px]">
+                            <div class="info-block relative  mt-[-17px] rounded-[20px] bg-white">
+                                <div class="flex items-center mb-6">
+                                    <div class="pt-[7px] pb-[7px] pl-[10px] pr-[10px] tag tag-violet rounded-[10px] mr-[20px]"><i class="fa-regular fa-star mr-2"></i> Новое</div>
+                                    <div class="flex items-center text-2xl"><img class="w-[23px] object-cover mr-2" src="../dist/img/icons/coin.svg"><span class="opacity-60 text-[14px] ">+100 монеток</span></div>
+                                </div>
+                                <h4 class="title">Почему миллениалы не любят дантистов и почему мне это так нравится</h4>
+                                <a href="/" class="button button-indigo py-6 group-hover:block mt-8">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button button-ghost mb-[50px] lg:mb-0 lg:ml-auto mr-auto rounded-[60px]">Показать все<i class="ml-4 fa-solid fa-angle-down fa-xs"></i></button>
+                    <button class="button button-ghost ml-auto mr-auto mb-28 rounded-[60px] hidden">Свернуть<i class="ml-4 fa-solid fa-angle-up fa-xs"></i></button>
+                </section>
+                <section class="blog__cards-wrapper overflow-hidden mb-[20px] lg:mb-[64px] lg:mb-[170px] lg:mt-[-20px] mr-[-24px] lg:mr-0">
+                    <div class="blog-cards-slider swiper relative">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class=" blog-cards-slide flex items-center p-[20px] rounded-[20px]">
+                            <div class="left hidden lg:block lg:mr-16">
+                                <div class="image">
+                                    <img src="../dist//img/blog-slider-image.png">
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="flex items-center mb-[20px] lg:mb-5">
+                                    <img class="mr-4 w-[40px] h-[40px] lg:w-[55px] lg:h-[55px] rounded-[55px]" src="../dist/img/blog-card-character.png">
+                                    <div class="mr-4">Боль в спине</div>
+                                    <button class="subscribe button button-ghost rounded-[60px] pt-[7px] pb-[7px] pr-[15px] pl-[15px] text-2xl">Подписаться<i class="fa-regular fa-square-plus fa-sm ml-4"></i></button>
+                                </div>
+                                <div class="image lg:hidden mb-[20px]">
+                                    <img src="../dist//img/blog-slider-image.png">
+                                </div>
+                                <div class="mb-4 text">«Я очень люблю внимание, и теперь у меня еще один способ его привлекать!»</div>
+                                <div class="blogs-cards-social flex items-center">
+                                    <div class="social-text mr-4">Поделиться:</div>
+                                    <a class="mr-[10px]" href="https://vk.com/"><img src="../dist/img/icons/vk-grey.svg" alt="vk" /></a>
+                                    <a href="https://ok.com/"><img src="../dist/img/icons/ok-grey.svg"  alt="ok"/></a>
+                                </div>
+                            </div>
+                         </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class=" blog-cards-slide flex items-center p-[20px] rounded-[20px]">
+                            <div class="left hidden lg:block lg:mr-16">
+                                <div class="image">
+                                    <img src="../dist//img/blog-slider-image.png">
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="flex items-center mb-[20px] lg:mb-5">
+                                    <img class="mr-4 w-[40px] h-[40px] lg:w-[55px] lg:h-[55px] rounded-[55px]" src="../dist/img/blog-card-character.png">
+                                    <div class="mr-4">Боль в спине</div>
+                                    <button class="subscribe button button-ghost rounded-[60px] pt-[7px] pb-[7px] pr-[15px] pl-[15px] text-2xl">Подписаться<i class="fa-regular fa-square-plus fa-sm ml-4"></i></button>
+                                </div>
+                                <div class="image lg:hidden mb-[20px]">
+                                    <img src="../dist//img/blog-slider-image.png">
+                                </div>
+                                <div class="mb-4 text">«Я очень люблю внимание, и теперь у меня еще один способ его привлекать!»</div>
+                                <div class="blogs-cards-social flex items-center">
+                                    <div class="social-text mr-4">Поделиться:</div>
+                                    <a class="mr-[10px]" href="https://vk.com/"><img src="../dist/img/icons/vk-grey.svg" alt="vk" /></a>
+                                    <a href="https://ok.com/"><img src="../dist/img/icons/ok-grey.svg"  alt="ok"/></a>
+                                </div>
+                            </div>
+                         </div>
+                          </div>    
+                        </div>          
+                        <div class="swiper-button-prev hidden"></div>
+                        <div class="swiper-button-next hidden lg:block"></div>            
+                      </div>
+                </section>
+                </div>
+            </section>
+        </main>
+        <div class="footer__wrapper">
+            <section class="footer__warning hidden lg:block absolute bottom-full w-full p-[5rem_0_1.8rem]">
+                <div class="container-big">
+                    <div class="footer__warning-text">
+                        ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМО ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ ПО МЕДИЦИНСКОМУ ПРИМЕНЕНИЮ ИЛИ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+                    </div>
+                </div>
+            </section>
+            <footer class="footer bg-black">
+                <div class="container-big">
+                    <div class="footer__inner">
+                        <div class="footer__top flex flex-wrap justify-between items-start lg:items-center flex-col lg:flex-row">
+                            <div class="footer__top-left flex flex-col lg:flex-row">
+                                <a href="/" class="footer__logo mb-[18px] lg:mb-0"><img src="../dist/img/icons/white-logo.svg" alt="Logo"/></a>
+                                <div class="footer__allowed-age flex items-center justify-center rounded-full mb-[18px] lg:mb-0">7+</div>
+                            </div>
+                            <div class="footer__top-right ">
+                                <div class="footer__social flex items-center">
+                                    <div class="footer__social-text">Поделиться:</div>
+                                    <ul class="footer__social-list flex items-center">
+                                        <li><a href="#"><img src="../dist/img/icons/ok.svg"/></a></li>
+                                        <li><a href="#"><img src="../dist/img/icons/vk.svg" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__warning-text mb-[20px] lg:hidden">
+                            ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМО ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ ПО МЕДИЦИНСКОМУ ПРИМЕНЕНИЮ ИЛИ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+                        </div>
+                        <div class="footer__center flex justify-between flex-wrap lg:flex-1">
+                            <ul class="footer__links">
+                                <li><a href="#">Лицензия</a></li>
+                                <li><a href="#">Рекламодатель</a></li>
+                                <li><a href="#">ООО</a></li>
+                            </ul>
+                            <ul class="footer__docs">
+                                <li><a href="#">Политика по работе с персональными данными и конфиденциальности</a></li>
+                                <li><a href="#">Согласие на обработку персональных данных</a></li>
+                                <li><a href="#">Политика использования файлов Cookie ООО «Др. Редди’c Лабороторис»</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__copyright">
+                            <p>Все права защищены <script>document.write(new Date().getFullYear())</script>г.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <button class="footer__top-arrow" data-target="html" id="scroll-to-top" >
+                <img src="../dist/img/icons/arrow-top.svg" alt="Кнопка перемещения наверх страницы">
+            </button>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../dist/js/index.js"></script>
+</html>

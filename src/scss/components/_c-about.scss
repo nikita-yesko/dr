@@ -1,0 +1,15 @@
+.about-short {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    box-sizing: border-box;
+  }
+}

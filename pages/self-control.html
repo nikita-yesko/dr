@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self control - Dr Reddis</title>
+    <link rel="stylesheet" href="../dist/css/index.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="header" class="header ">
+        <div class="header__inner">
+            <div class="header__content justify-between container">
+                <a href="/" class="header__logo"><span>Планета</span> симптомов</a>
+                <button class="header__menu"></button>
+                <nav class="flex items-center border-[1px] header__nav ">
+                    <li><a href="#">Город Больск</a></li>
+                    <li class="dropdown"><a href="#">Лаборатория<div class="dropdown__arrow"></div></a>
+                        <ul class="dropdown__list">
+                            <li><a href="#">База знаний</a></li>
+                            <li><a href="#">Самоконтроль</a></li>
+                            <li><a href="#">Интерактив</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Аптека</a></li>
+                    <li><a href="#">Программа лояльности</a></li>
+                </nav>
+                <a href="/pages/profile" class="header__profile flex items-center">
+                    <div class="header__profile-icon mr-4 rounded-full flex items-center justify-center w-[40px] h-[40px] bg-blur">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <span class="text-2xl">Вход</span>
+                </a>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="responsive-backgound-url w-[100vw] h-[875px] lg:h-[800px] rounded-t-[30px] lg:rounded-t-[0] rounded-b-[30px] lg:rounded-b-[60px] overflow-hidden lg:flex items-center"
+            style="background-size: cover;"
+            data-bg-desktop="../dist/img/backgrounds/self-control-bg.png"
+            data-bg-mobile="../dist/img/backgrounds/self-control-mobile-bg.png"  
+            >
+            <div class="container flex flex-col items-center lg:block mt-24 lg:mt-0 ">
+                <div class="hero-articles max-w-max">
+                    <div class="flex justify-between mb-8 lg:mb-6">
+                        <a href="../" class="button button_small button-blur text-white lg:!text-[#4f4f4f]"><i class="fa-solid fa-angle-left mr-[7px]"></i>Назад в Лабораторию</a>
+                        <a href="../" class="button button_small button-blur hidden lg:!text-[#4f4f4f] lg:block">Вперед в Аптеку<i class="fa-solid fa-angle-right ml-[7px]"></i></a>
+                    </div>
+                    <h1 class="section__heading text-center lg:text-left text-white lg:text-black mb-6">Самоконтроль</h1>
+                    <p class="hero-articles__description text-3xl text-white lg:text-[#4f4f4f] opacity-60 lg:opacity-70 text-center lg:text-left mb-6">Здесь вы найдете наборы карточек,<br> которые помогут ответить на многие вопросы<br> по поводу здоровья. Например, с их помощью можно<br> определить, какой вид боли вам докучает.</p>
+                    <a href="/" class="button button_small button-indigo pt-4 pb-4 pr-8 pl-8 hidden lg:block">Хочу узнать больше!<i class="fa-solid fa-angle-right ml-[7px]"></i></a>
+                </div>
+            </div>
+        </div>
+        <section class="section pt-[4.5rem] lg:pt-[3.5rem] pb-[3.5rem] md:pb-[14.4rem]">
+            <div class="container !max-w-[1248px] px-10 ">
+                <div class="flex flex-wrap items-center mb-[3rem] lg:mb-[3.5rem]">
+                    <div class="mr-[1.5rem] mb-[1.5rem] lg:mb-0 text-label">Сортировать по:</div>
+                    <div class="select custom-select mb-[1.5rem] lg:mb-0">
+                        <input type="hidden" name="filter_location" id="filter-location" placeholder="Выберите значение..."/>
+                        <div class="select-head">Локализация боли</div>
+                        <div class="select-items">
+                            <div class="select-item" data-value="Не выбрано">Не выбрано</div>
+                            <div class="select-item" data-value="Боль 1">Боль 1</div>
+                            <div class="select-item" data-value="Боль 2">Боль 2</div>
+                            <div class="select-item" data-value="Боль 3">Боль 3</div>
+                        </div>
+                    </div>
+                </div>
+   
+                <div class="flex flex-wrap justify-center [&>.knowledge-base-card:nth-child(4n)]:mr-0">
+                    <div class="knowledge-base-card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(25%-1.5rem)] mb-[1rem] md:mb-[1.5rem] bg-[#f7f7ff] p-10 lg:pb-[4.4rem] hover:pb-10 rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                        <img src="../dist/img/lab-articles-poster.png" alt="title" class="object-cover w-full h-[155px] sm:h-[190px] rounded-[20px] mb-4 sm:mb-14 group-hover:h-[164px] group-hover:mb-2">
+                        <div>
+                            <div class="flex justify-between mb-6">
+                                <div class="tag tag-white rounded-[10px]"><i class="fa-regular fa-star mr-2"></i> Новое</div>
+                                <div class="flex items-center text-2xl"><img class="object-cover mr-[8px]" src="../dist/img/icons/coin.svg"><span class="text-[#a4a4a4]">+100 монеток</span></div>
+                                <!-- <div class="tag tag-green rounded-[10px]"><i class="fa-regular fa-square-check mr-2"></i> Прочитано</div> -->
+                                <!-- <div class="tag tag-ghost flex items-center w-max rounded-full"><i class="fa-solid fa-lock mr-4"></i> Доступно после <br> авторизации</div> -->
+                            </div>
+                            <h4 class="title-body">Как хорошо вы знаете разные виды боли?</h4>
+                            <a href="/" class="button button-indigo py-6 xl:hidden group-hover:block mt-[2rem] md:mt-[1.5rem]">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a>
+                            <!-- <a href="/" class="button button-black py-6 xl:hidden group-hover:block mt-4">Получить доступ <i class="fa-solid fa-angle-right ml-4"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="knowledge-base-card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(25%-1.5rem)] mb-[1rem] md:mb-[1.5rem] bg-[#f7f7ff] p-10 lg:pb-[4.4rem] hover:pb-10 rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                        <img src="../dist/img/lab-articles-poster.png" alt="title" class="object-cover w-full h-[155px] sm:h-[190px] rounded-[20px] mb-4 sm:mb-14 group-hover:h-[164px] group-hover:mb-2">
+                        <div>
+                            <div class="flex justify-between mb-6">
+                                <div class="tag tag-white rounded-[10px]"><i class="fa-regular fa-star mr-2"></i> Новое</div>
+                                <div class="flex items-center text-2xl"><img class="object-cover mr-[8px]" src="../dist/img/icons/coin.svg"><span class="text-[#a4a4a4]">+100 монеток</span></div>
+                                <!-- <div class="tag tag-green rounded-[10px]"><i class="fa-regular fa-square-check mr-2"></i> Прочитано</div> -->
+                                <!-- <div class="tag tag-ghost flex items-center w-max rounded-full"><i class="fa-solid fa-lock mr-4"></i> Доступно после <br> авторизации</div> -->
+                            </div>
+                            <h4 class="title-body">Как хорошо вы знаете разные виды боли?</h4>
+                            <a href="/" class="button button-indigo py-6 xl:hidden group-hover:block mt-[2rem] md:mt-[1.5rem]">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a>
+                            <!-- <a href="/" class="button button-black py-6 xl:hidden group-hover:block mt-4">Получить доступ <i class="fa-solid fa-angle-right ml-4"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="knowledge-base-card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(25%-1.5rem)] mb-[1rem] md:mb-[1.5rem] bg-[#f7f7ff] p-10 lg:pb-[4.4rem] hover:pb-10 rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                        <img src="../dist/img/lab-articles-poster.png" alt="title" class="object-cover w-full h-[155px] sm:h-[190px] rounded-[20px] mb-4 sm:mb-14 group-hover:h-[164px] group-hover:mb-2">
+                        <div>
+                            <div class="flex justify-between mb-6">
+                                <!-- <div class="tag tag-white rounded-[10px]"><i class="fa-regular fa-star mr-2"></i> Новое</div>
+                                <div class="flex items-center text-2xl"><img class="object-cover mr-[8px]" src="../dist/img/icons/coin.svg"><span class="text-[#a4a4a4]">+100 монеток</span></div> -->
+                                <div class="tag tag-green rounded-[10px]"><i class="fa-regular fa-square-check mr-2"></i> Прочитано</div>
+                                <!-- <div class="tag tag-ghost flex items-center w-max rounded-full"><i class="fa-solid fa-lock mr-4"></i> Доступно после <br> авторизации</div> -->
+                            </div>
+                            <h4 class="title-body">Как хорошо вы знаете разные виды боли?</h4>
+                            <a href="/" class="button button-indigo py-6 xl:hidden group-hover:block mt-[2rem] md:mt-[1.5rem]">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a>
+                            <!-- <a href="/" class="button button-black py-6 xl:hidden group-hover:block mt-4">Получить доступ <i class="fa-solid fa-angle-right ml-4"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="knowledge-base-card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(25%-1.5rem)] mb-[1rem] md:mb-[1.5rem] bg-[#f7f7ff] p-10 lg:pb-[4.4rem] hover:pb-10 rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                        <img src="../dist/img/lab-articles-poster.png" alt="title" class="object-cover w-full h-[155px] sm:h-[190px] rounded-[20px] mb-4 sm:mb-14 group-hover:h-[164px] group-hover:mb-2">
+                        <div>
+                            <div class="flex justify-between mb-6">
+                                <!-- <div class="tag tag-white rounded-[10px]"><i class="fa-regular fa-star mr-2"></i> Новое</div>
+                                <div class="flex items-center text-2xl"><img class="object-cover mr-[8px]" src="../dist/img/icons/coin.svg"><span class="text-[#a4a4a4]">+100 монеток</span></div> -->
+                                <div class="tag tag-green rounded-[10px]"><i class="fa-regular fa-square-check mr-2"></i> Прочитано</div>
+                                <!-- <div class="tag tag-ghost flex items-center w-max rounded-full"><i class="fa-solid fa-lock mr-4"></i> Доступно после <br> авторизации</div> -->
+                            </div>
+                            <h4 class="title-body">Как хорошо вы знаете разные виды боли?</h4>
+                            <a href="/" class="button button-indigo py-6 xl:hidden group-hover:block mt-[2rem] md:mt-[1.5rem]">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a>
+                            <!-- <a href="/" class="button button-black py-6 xl:hidden group-hover:block mt-4">Получить доступ <i class="fa-solid fa-angle-right ml-4"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="knowledge-base-card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(25%-1.5rem)] mb-[1rem] md:mb-[1.5rem] bg-[#f7f7ff] p-10 lg:pb-[4.4rem] hover:pb-10 rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                        <img src="../dist/img/lab-articles-poster.png" alt="title" class="object-cover w-full h-[155px] sm:h-[190px] rounded-[20px] mb-4 sm:mb-14 group-hover:h-[164px] group-hover:mb-2">
+                        <div>
+                            <div class="flex justify-between mb-6">
+                                <!-- <div class="tag tag-white rounded-[10px]"><i class="fa-regular fa-star mr-2"></i> Новое</div>
+                                <div class="flex items-center text-2xl"><img class="object-cover mr-[8px]" src="../dist/img/icons/coin.svg"><span class="text-[#a4a4a4]">+100 монеток</span></div> -->
+                                <div class="tag tag-green rounded-[10px]"><i class="fa-regular fa-square-check mr-2"></i> Прочитано</div>
+                                <!-- <div class="tag tag-ghost flex items-center w-max rounded-full"><i class="fa-solid fa-lock mr-4"></i> Доступно после <br> авторизации</div> -->
+                            </div>
+                            <h4 class="title-body">Как хорошо вы знаете разные виды боли?</h4>
+                            <a href="/" class="button button-indigo py-6 xl:hidden group-hover:block mt-[2rem] md:mt-[1.5rem]">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a>
+                            <!-- <a href="/" class="button button-black py-6 xl:hidden group-hover:block mt-4">Получить доступ <i class="fa-solid fa-angle-right ml-4"></i></a> -->
+                        </div>
+                    </div>
+                  
+                 
+                    <div class="knowledge-base-card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(25%-1.5rem)] mb-[1rem] md:mb-[1.5rem] bg-[#f7f7ff] p-10 lg:pb-[4.4rem] hover:pb-10 rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                        <img src="../dist/img/lab-articles-poster.png" alt="title" class="object-cover w-full h-[155px] sm:h-[190px] rounded-[20px] mb-4 sm:mb-14 group-hover:h-[164px] group-hover:mb-2">
+                        <div>
+                            <div class="flex justify-between mb-6">
+                                <!-- <div class="tag tag-white rounded-[10px]"><i class="fa-regular fa-star mr-2"></i> Новое</div> -->
+                                <!-- <div class="flex items-center text-2xl"><img class="object-cover mr-[8px]" src="../dist/img/icons/coin.svg"><span class="text-[#a4a4a4]">+100 монеток</span></div> -->
+                                <!-- <div class="tag tag-green rounded-[10px]"><i class="fa-regular fa-square-check mr-2"></i> Прочитано</div> -->
+                                <div class="tag tag-ghost tag-full flex items-center"><img class="mr-[7px]" src="../dist/img/icons/interface-lock.svg"><span>Доступно после авторизации</span></div>
+                            </div>
+                            <h4 class="title-body">Как хорошо вы знаете разные виды боли?</h4>
+                            <!-- <a href="/" class="button button-indigo py-6 xl:hidden group-hover:block mt-[2rem] md:mt-[1.5rem]">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a> -->
+                            <a href="/" class="button button-black py-6 xl:hidden group-hover:block mt-[2rem] md:mt-[1.5rem]">Получить доступ <i class="fa-solid fa-angle-right ml-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="knowledge-base-card w-full group md:w-[calc(50%-1.5rem)] lg:w-[calc(25%-1.5rem)] mb-[1rem] md:mb-[1.5rem] bg-[#f7f7ff] p-10 lg:pb-[4.4rem] hover:pb-10 rounded-[20px] overflow-hidden cursor-pointer md:mr-6">
+                        <img src="../dist/img/lab-articles-poster.png" alt="title" class="object-cover w-full h-[155px] sm:h-[190px] rounded-[20px] mb-4 sm:mb-14 group-hover:h-[164px] group-hover:mb-2">
+                        <div>
+                            <div class="flex justify-between mb-6">
+                                <!-- <div class="tag tag-white rounded-[10px]"><i class="fa-regular fa-star mr-2"></i> Новое</div> -->
+                                <!-- <div class="flex items-center text-2xl"><img class="object-cover mr-[8px]" src="../dist/img/icons/coin.svg"><span class="text-[#a4a4a4]">+100 монеток</span></div> -->
+                                <!-- <div class="tag tag-green rounded-[10px]"><i class="fa-regular fa-square-check mr-2"></i> Прочитано</div> -->
+                                <div class="tag tag-ghost tag-full flex items-center"><img class="mr-[7px]" src="../dist/img/icons/interface-lock.svg"><span>Доступно после авторизации</span></div>
+                            </div>
+                            <h4 class="title-body">Как хорошо вы знаете разные виды боли?</h4>
+                            <!-- <a href="/" class="button button-indigo py-6 xl:hidden group-hover:block mt-[2rem] md:mt-[1.5rem]">Читать статью <i class="fa-solid fa-angle-right ml-4"></i></a> -->
+                            <a href="/" class="button button-black py-6 xl:hidden group-hover:block mt-[2rem] md:mt-[1.5rem]">Получить доступ <i class="fa-solid fa-angle-right ml-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="button button_small button-ghost ml-auto mr-auto md:hidden mt-[40px] rounded-[10px]">Загрузить еще</button>
+            </div>
+        </section>
+    </main>
+    <div class="footer__wrapper">
+        <section class="footer__warning hidden lg:block absolute bottom-full w-full p-[5rem_0_1.8rem]">
+            <div class="container-big">
+                <div class="footer__warning-text">
+                    ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМО ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ ПО МЕДИЦИНСКОМУ ПРИМЕНЕНИЮ ИЛИ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+                </div>
+            </div>
+        </section>
+        <footer class="footer bg-black">
+            <div class="container-big">
+                <div class="footer__inner">
+                    <div class="footer__top flex flex-wrap justify-between items-start lg:items-center flex-col lg:flex-row">
+                        <div class="footer__top-left flex flex-col lg:flex-row">
+                            <a href="/" class="footer__logo mb-[18px] lg:mb-0"><img src="../dist/img/icons/white-logo.svg" alt="Logo"/></a>
+                            <div class="footer__allowed-age flex items-center justify-center rounded-full mb-[18px] lg:mb-0">7+</div>
+                        </div>
+                        <div class="footer__top-right ">
+                            <div class="footer__social flex items-center">
+                                <div class="footer__social-text">Поделиться:</div>
+                                <ul class="footer__social-list flex items-center">
+                                    <li><a href="#"><img src="../dist/img/icons/ok.svg"/></a></li>
+                                    <li><a href="#"><img src="../dist/img/icons/vk.svg" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__warning-text mb-[20px] lg:hidden">
+                        ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМО ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ ПО МЕДИЦИНСКОМУ ПРИМЕНЕНИЮ ИЛИ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+                    </div>
+                    <div class="footer__center flex justify-between flex-wrap lg:flex-1">
+                        <ul class="footer__links">
+                            <li><a href="#">Лицензия</a></li>
+                            <li><a href="#">Рекламодатель</a></li>
+                            <li><a href="#">ООО</a></li>
+                        </ul>
+                        <ul class="footer__docs">
+                            <li><a href="#">Политика по работе с персональными данными и конфиденциальности</a></li>
+                            <li><a href="#">Согласие на обработку персональных данных</a></li>
+                            <li><a href="#">Политика использования файлов Cookie ООО «Др. Редди’c Лабороторис»</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__copyright">
+                        <p>Все права защищены <script>document.write(new Date().getFullYear())</script>г.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <button class="footer__top-arrow" data-target="html" id="scroll-to-top" >
+            <img src="../dist/img/icons/arrow-top.svg" alt="Кнопка перемещения наверх страницы">
+        </button>
+    </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../dist/js/index.js"></script>
+
+</html>

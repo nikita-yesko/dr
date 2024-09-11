@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win winprizes - Dr Reddis</title>
+    <link rel="stylesheet" href="../dist/css/index.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <body>
+        <main class="main">
+            <header id="header" class="header">
+                <div class="header__inner">
+                    <div class="header__content justify-between container">
+                        <a href="/" class="header__logo"><span>Планета</span> симптомов</a>
+                        <button class="header__menu"></button>
+                        <nav class="flex items-center border-[1px] header__nav ">
+                            <li><a href="#">Город Больск</a></li>
+                            <li class="dropdown"><a href="#">Лаборатория<div class="dropdown__arrow"></div></a>
+                                <ul class="dropdown__list">
+                                    <li><a href="#">База знаний</a></li>
+                                    <li><a href="#">Самоконтроль</a></li>
+                                    <li><a href="#">Интерактив</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Аптека</a></li>
+                            <li><a href="#">Программа лояльности</a></li>
+                        </nav>
+                        <a href="/pages/profile" class="flex items-center">
+                            <div class="block mr-4 p-4 rounded-full flex items-center justify-center w-[50px] h-[50px] bg-white">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            <span class="text-2xl">Анна Иванова</span>
+                        </a>
+                    </button>
+                </div>
+            </header>
+            <section class="section">
+                <div class="container-md !max-w-[1150px] mt-0 lg:mt-[120px]">
+                    <div class="flex justify-between mb-16 flex-wrap lg:flex-nowrap">
+                        <div class="w-[100%] lg:w-[55%] mb-[20px] lg:mb-0">
+                            <div class="flex flex-wrap justify-between mb-8">
+                                <a href="../" class="button button_small button-ghost"><i class="fa-solid fa-angle-left"></i> Назад</a>
+                            </div>
+                            <div class="breadcrumbs mb-4">
+                                <a class="mb-4" href="#">Личный кабинет</a>
+                                <a class="mb-4" href="#">Программа лояльности</a>
+                                <a class="mb-4" href="#">Правила</a>
+                            </div>
+                            <h1 class="font-intertight-medium !leading-tight text-5xl xl:text-7xl mb-8">
+                                Выиграйте приз
+                            </h1>
+                            <p class="text-[18px] leading-[1.4] text-[#4F4F4F]">
+                                В поле ниже в ячейках спрятались призы, которые ещё никто не<br>
+                                забрал. Нажмите на понравившуюся ячейку, чтобы попытать удачу!
+                            </p>
+                        </div>
+                        
+                        <!--Баланс И Статус-->
+                        <div class="relative flex flex-col gap-4 border border-[rgba(0, 0, 0, 0.05)] p-8 sm:p-12 rounded-[30px] h-[187px] lg:h-[227px] max-w-[340px]">
+                        <div class="flex gap-4 items-center">
+                            <div class="text-[16px] leading-[1.4] text-[#A4A4A4]">Ваш статус сейчас:</div>
+                            <div class="flex justify-between items-center bg-[#F1F4FE] rounded-[10px] p-4 ">
+                                <div class="min-w-[22px]">
+                                    <img class="w-[22px] h-[22px] object-contain mr-2" src="../dist/img/profile/reward1.png">
+                                </div>
+                                <div class="text-[[16px]] leading-[1.4] text-[#4F4F4F]">Обыватель</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-between text-[#A4A4A4] h-[100%]">
+                            <div class="flex items-center gap-4">
+                                <div class="text-[16px] leading-[1.4] text-[#A4A4A4]">Баланс:</div>
+                                <img class="w-14 object-contain" src="../dist/img/icons/coin.svg">
+                                <div class="text-[30px] text-[#000000] font-semibold leading-none">20 монеток</div>
+                            </div>
+                            <a href="../pages/bonus-history.html" class="text-[14px] leading-[1.4] text-[#A4A4A4] underline" >Смотреть историю начислений</a>
+                        </div>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                    
+                   
+                    <!--Регистрация чека-->
+                    <div class="flex flex-col gap-8 items-center bg-[#828FE9] py-8 px-8 sm:py-16 sm:pl-16 relative rounded-[30px] mb-4 overflow-hidden">
+                        <div class="flex  gap-4 sm:gap-14 text-white flex-wrap lg:flex-nowrap">
+                            <div class="flex items-center">
+                                <i class="text-[9px]  fa-solid fa-info mr-[4px] w-[18px] h-[18px] px-[6px] py-[2px]  border border-white rounded-full align-middle"></i>
+                                <p class="text-[14px] leading-[18px]">Выбрать ячейку можно будет один раз</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="text-[9px]  fa-solid fa-info mr-[4px] w-[18px] h-[18px] px-[6px] py-[2px]  border border-white rounded-full align-middle"></i>
+                                <p class="text-[14px] leading-[18px]">Одна попытка стоит 2000 монеток</p>
+                            </div>
+                        </div>
+                        <div class="w-[100%]">
+                            <div class="winprizes-cards-slider swiper relative ">
+                                <div class="swiper-wrapper mb-8">
+                                    <div class=" winprizes__card swiper-slide">
+                                        <img src="../dist//img/winprizes/bluebox.png">
+                                        <div class="winprizes-card__title">Ячейка <div class="tag tag-lilac">№1</div></div>
+                                        <a href="" class="button button_small button-blur-dark-prize">Выбрать <i class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                    <div class="winprizes__card swiper-slide">
+                                        <img src="../dist//img/winprizes/orangebox.png">
+                                        <div class="winprizes-card__title">Ячейка <div class="tag tag-lilac">№2</div></div>
+                                        <a href="" class="button button_small button-blur-dark-prize">Выбрать <i class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                    <div class="winprizes__card swiper-slide selected">
+                                        <img src="../dist//img/winprizes/pinkbox.png">
+                                        <div class="winprizes-card__title">Ячейка <div class="tag tag-lilac">№3</div></div>
+                                        <a href="" class="button button_small button-blur-dark-prize">Выбрать <i class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                    <div class="winprizes__card swiper-slide opened">
+                                        <img src="../dist//img/winprizes/winbox.png">
+                                        <div class="winprizes-card__title">Ячейка <div class="tag tag-lilac">№4</div></div>
+                                        <a href="" class="button button_small button-blur-dark-prize">Выбрать <i class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                    <div class="winprizes__card swiper-slide">
+                                        <img src="../dist//img/winprizes/bluebox.png">
+                                        <div class="winprizes-card__title">Ячейка <div class="tag tag-lilac">№5</div></div>
+                                        <a href="" class="button button_small button-blur-dark-prize">Выбрать <i class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                    <div class="winprizes__card swiper-slide">
+                                        <img src="../dist//img/winprizes/pinkbox.png">
+                                        <div class="winprizes-card__title">Ячейка <div class="tag tag-lilac">№6</div></div>
+                                        <a href="" class="button button_small button-blur-dark-prize">Выбрать <i class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                    <div class="winprizes__card swiper-slide">
+                                        <img src="../dist//img/winprizes/orangebox.png">
+                                        <div class="winprizes-card__title">Ячейка <div class="tag tag-lilac">№7</div></div>
+                                        <a href="" class="button button_small button-blur-dark-prize">Выбрать <i class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                    <div class="winprizes__card swiper-slide">
+                                        <img src="../dist//img/winprizes/bluebox.png">
+                                        <div class="winprizes-card__title">Ячейка <div class="tag tag-lilac">№8</div></div>
+                                        <a href="" class="button button_small button-blur-dark-prize">Выбрать <i class="fa-solid fa-angle-right"></i></a>
+                                    </div>     
+                                </div>          
+                                <div class="swiper-scrollbar !block !relative !h-[2px]"></div>            
+                            </div>
+                        </div>
+                        <button onclick="agreeToSpend.showModal()" href="" class="button-white-fill flex gap-2 button   text-[14px] sm:text-[18px] font-medium py-[15px] px-[20.5px] align-middle items-center">Открыть 1 ячейку за 2 000 <img class="w-[25px] inline-block object-contain" src="../dist/img/icons/coin.svg"></button>
+                    </div>
+                    <button onclick="winPrize.showModal()" href="" class="button-white-fill flex gap-2 button    text-[18px] font-medium py-[15px] px-[20.5px] align-middle items-center">Выиграл приз<img class="w-[25px] inline-block object-contain" src="../dist/img/icons/coin.svg"></button>
+                    <button onclick="losePrize.showModal()" href="" class="button-white-fill flex gap-2 button    text-[18px] font-medium py-[15px] px-[20.5px] align-middle items-center">Не выиграл приз<img class="w-[25px] inline-block object-contain" src="../dist/img/icons/coin.svg"></button>
+            
+                </div>
+                </section>
+        </main>
+        <div class="footer__wrapper mt-[100px]" >
+            <section class="footer__warning hidden lg:block absolute bottom-full w-full p-[5rem_0_1.8rem]">
+                <div class="container-big">
+                    <div class="footer__warning-text">
+                        ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМО ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ ПО МЕДИЦИНСКОМУ ПРИМЕНЕНИЮ ИЛИ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+                    </div>
+                </div>
+            </section>
+            <footer class="footer bg-black">
+                <div class="container-big">
+                    <div class="footer__inner">
+                        <div class="footer__top flex flex-wrap justify-between items-start lg:items-center flex-col lg:flex-row">
+                            <div class="footer__top-left flex flex-col lg:flex-row">
+                                <a href="/" class="footer__logo mb-[18px] lg:mb-0"><img src="../dist/img/icons/white-logo.svg" alt="Logo"/></a>
+                                <div class="footer__allowed-age flex items-center justify-center rounded-full mb-[18px] lg:mb-0">7+</div>
+                            </div>
+                            <div class="footer__top-right ">
+                                <div class="footer__social flex items-center">
+                                    <div class="footer__social-text">Поделиться:</div>
+                                    <ul class="footer__social-list flex items-center">
+                                        <li><a href="#"><img src="../dist/img/icons/ok.svg"/></a></li>
+                                        <li><a href="#"><img src="../dist/img/icons/vk.svg" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__warning-text mb-[20px] lg:hidden">
+                            ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМО ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ ПО МЕДИЦИНСКОМУ ПРИМЕНЕНИЮ ИЛИ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+                        </div>
+                        <div class="footer__center flex justify-between flex-wrap lg:flex-1">
+                            <ul class="footer__links">
+                                <li><a href="#">Лицензия</a></li>
+                                <li><a href="#">Рекламодатель</a></li>
+                                <li><a href="#">ООО</a></li>
+                            </ul>
+                            <ul class="footer__docs">
+                                <li><a href="#">Политика по работе с персональными данными и конфиденциальности</a></li>
+                                <li><a href="#">Согласие на обработку персональных данных</a></li>
+                                <li><a href="#">Политика использования файлов Cookie ООО «Др. Редди’c Лабороторис»</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__copyright">
+                            <p>Все права защищены <script>document.write(new Date().getFullYear())</script>г.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <button class="footer__top-arrow" data-target="html" id="scroll-to-top" >
+                <img src="../dist/img/icons/arrow-top.svg" alt="Кнопка перемещения наверх страницы">
+            </button>
+        </div>
+
+
+        <!-- modals -->
+            <!-- agreeToSpend modal -->
+        <dialog id="agreeToSpend"
+            class="!fixed max-w-[782px] w-full relative rounded-[30px] bg-white p-[17px] xl:px-[60px] !pt-[77px] xl:pb-[60px]">
+            <div class="button button_small button-ghost absolute top-8
+            right-8" onclick="agreeToSpend.close()">
+                Закрыть <i class="fa-solid fa-xmark ml-10"></i>
+            </div>
+            <h3 class="flex text-5xl text-center justify-center leading-[normal] font-bold mb-8">Вы точно хотите потратить <br class="hidden sm:block">2000 баллов на попытку?</h3>
+            <div class="flex items-center justify-between max-w-[340px] mx-auto">
+                <div onclick="agreeToSpend.close()" class="button button-indigo py-[16px] px-[26.5px]">Да<i class="fa-solid fa-angle-right ml-4"></i>
+                </div>
+                <div onclick="agreeToSpend.close()" class="button button-ghost py-[16px] px-[7px]">Нет, я случайно нажал <i class="fa-solid fa-angle-right ml-4"></i></div>
+                
+            </div>
+        </dialog>
+        <!-- winPrize modal -->
+        <dialog id="winPrize"
+            class="!fixed max-w-[782px] w-full relative rounded-[30px] bg-white p-[17px] xl:px-[60px] !pt-[77px] xl:pb-[60px]">
+            <div class="button button_small button-ghost absolute top-8
+            right-8" onclick="winPrize.close()">
+                Закрыть <i class="fa-solid fa-xmark ml-10"></i>
+            </div>
+            <div class="flex flex-col items-center gap-8">
+                <h3 class="flex text-5xl text-center justify-center leading-[normal] font-bold">
+                    Поздравляем! Вы получили<br>
+                    “Скидко-добыватор”
+                </h3>
+                <img src="../dist/img/prizes/2big.jpg" alt="prize" class="max-w-[388px] w-[100%]">
+                <div class="flex items-center justify-between max-w-[340px] mx-auto">
+                    <div onclick="winPrize.close()" class="button button-ghost-indigo py-[16px] px-[20.5px]">Подробнее о призе<i class="fa-solid fa-angle-right ml-4"></i></div>
+                </div>
+            </div>
+        </dialog>
+        <!-- losePrize modal -->
+        <dialog id="losePrize"
+            class="!fixed max-w-[782px] w-full relative h-[530px] rounded-[30px] bg-white p-[17px] xl:px-[60px] !pt-[67px] xl:pb-[60px] overflow-hidden">
+            <div class="button button_small button-ghost absolute top-8
+            right-8 z-10" onclick="losePrize.close()">
+                Закрыть <i class="fa-solid fa-xmark ml-10"></i>
+            </div>
+            <div class="flex flex-col items-center gap-8">
+                <h3 class="flex text-5xl text-center justify-center leading-[normal] font-bold">
+                    Ой. Приз спрятался не здесь.<br>
+                    Повезёт в другой раз!
+                </h3>
+                <img src="../dist/img/prizes/losePrize.png" alt="lose-prize" class=" object-cover max-w-[565px] min-w-[420px] w-[100%] absolute left-[9%] sm:left-[25%] bottom-[10%]">
+            </div>
+        </dialog>
+        <!-- login modal -->
+        <dialog id="login"
+            class="!fixed max-w-[600px] w-full relative rounded-[30px] bg-white p-[17px] xl:p-[75px] !pt-[80px]">
+            <div class="button button_small button-ghost absolute top-10
+            right-10" onclick="login.close()">
+                Закрыть <i class="fa-solid fa-xmark ml-10"></i>
+            </div>
+            <h3 class="flex text-5xl font-bold mb-14"><img class="mr-4" src="./dist/img/icons/enter-login.svg"> Войти в
+                личный кабинет</h3>
+            <form class="form-fieldset" action="#">
+                <label class="mb-6">
+                    <input type="text" class="input" name="login" required placeholder="Номер телефона или эл. почта">
+                </label>
+                <label class="mb-6">
+                    <input type="text" class="input" name="password" required placeholder="Пароль">
+                </label>
+                <div class="flex flex-wrap">
+                    <button class="w-full xl:w-max button button-indigo px-14 xl:mr-10 mb-6 xl:mb-0" type="submit">Войти
+                        <i class="fa-solid fa-angle-right ml-6"></i></button>
+                    <div class="w-full xl:w-max">
+                        <div onclick="login.close(); register.showModal();" class="block underline cursor-pointer mb-4">
+                            Зарегистрироваться</div>
+                        <a href="/forgot-password" class="block underline opacity-60">Забыли пароль?</a>
+                    </div>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- register modal -->
+        <dialog id="register"
+            class="!fixed max-w-[600px] w-full relative rounded-[30px] bg-white p-[17px] !pt-[100px] xl:px-[75px] xl:py-[100px]">
+            <div class="button button_small button-ghost absolute top-10
+            right-10" onclick="register.close()">
+                Закрыть <i class="fa-solid fa-xmark ml-10"></i>
+            </div>
+            <h3 class="flex text-5xl text-center font-bold mb-14"><img class="mr-4"
+                    src="../dist/img/icons/enter-login.svg">Зарегистрироваться</h3>
+            <form class="form-fieldset" onsubmit="successRegister.showModal()">
+                <label class="mb-6">
+                    <input type="text" class="input" name="name" required placeholder="Введите ФИО">
+                </label>
+                <label class="mb-6">
+                    <input type="email" class="input" name="email" required placeholder="Введите эл. почту">
+                </label>
+                <div class="!flex items-center mb-6 text-[#7f7f7f]">
+                    <input id="term" class="peer hidden" type="checkbox" name="term" />
+                    <label for="term" class="relative flex items-center cursor-pointer select-none text-slate-400 pl-10
+                        before:absolute before:left-0 before:flex before:h-4 before:w-4 
+                        before:items-center before:justify-center before:rounded-full before:p-4 before:border-[2px] 
+                        before:border-slate-400 before:bg-white before:transition-[background-color] 
+                        before:duration-300 before:ease-in before:content-[''] 
+                        peer-checked:before:content-['●']
+                        peer-checked:before:text-xl
+                        before:scale-75
+                        peer-checked:before:transition-[background-color] 
+                        peer-checked:before:duration-300 peer-checked:before:ease-in">
+                        <span class="text-[#7f7f7f] text-xl">Я принимаю <a href="/terms" class="underline">условия
+                                обработки персональных данных</a></span>
+                    </label>
+                </div>
+                <button class="button button-indigo px-14 xl:mr-10 w-full" type="submit">Зарегистрироваться <i
+                        class="fa-solid fa-angle-right ml-6"></i></button>
+            </form>
+        </dialog>
+
+        <!-- registerProgram modal -->
+        <dialog id="registerProgram"
+            class="!fixed max-w-[900px] w-full relative rounded-[30px] bg-white p-[17px] xl:px-[60px] xl:py-[60px] !pt-[100px]">
+            <div class="button button_small button-ghost absolute top-10
+            right-10" onclick="registerProgram.close()">
+                Закрыть <i class="fa-solid fa-xmark ml-10"></i>
+            </div>
+            <h3 class="text-5xl text-center leading-snug font-bold mb-6">
+                Регистрируйтесь и становитесь участником программы лояльности, чтобы просматривать больше контента и
+                получать призы!
+            </h3>
+            <p class="text-xl text-center mb-10">
+                Заполните форму ниже и получите <br> доступ к порталу
+            </p>
+            <div class="flex flex-wrap">
+                <form class="form-fieldset w-full xl:w-1/2 mb-6 xl:mb-0" action="#">
+                    <label class="mb-6">
+                        <input type="text" class="input" name="name" required placeholder="Введите ФИО">
+                    </label>
+                    <label class="mb-6">
+                        <input type="email" class="input" name="email" required placeholder="Введите эл. почту">
+                    </label>
+                    <div class="!flex items-center mb-6 text-[#7f7f7f]">
+                        <input id="term-policy" class="peer hidden" type="checkbox" name="term" />
+                        <label for="term-policy" class="relative flex items-center cursor-pointer select-none text-slate-400 pl-10
+                            before:absolute before:left-0 before:flex before:h-4 before:w-4 
+                            before:items-center before:justify-center before:rounded-full before:p-4 before:border-[2px] 
+                            before:border-slate-400 before:bg-white before:transition-[background-color] 
+                            before:duration-300 before:ease-in before:content-[''] 
+                            peer-checked:before:content-['●']
+                            peer-checked:before:text-xl
+                            before:scale-75
+                            peer-checked:before:transition-[background-color] 
+                            peer-checked:before:duration-300 peer-checked:before:ease-in">
+                            <span class="text-[#7f7f7f] text-xl">Я принимаю <a href="/terms" class="underline">условия
+                                    обработки персональных данных</a></span>
+                        </label>
+                    </div>
+                    <button class="button button-indigo px-14 xl:mr-10 w-full " type="submit">Зарегистрироваться <i
+                            class="fa-solid fa-angle-right ml-6"></i></button>
+                </form>
+                <div class="w-full xl:pl-14 xl:w-1/2">
+                    <img class="w-full rounded-[30px]" src="../dist/img/chydik.jpeg">
+                </div>
+            </div>
+        </dialog>
+
+        <!-- exit profile modal -->
+        <dialog id="exit"
+            class="!fixed max-w-[790px] w-full relative rounded-[30px] bg-white p-[17px] xl:px-[150px] xl:py-[50px]">
+            <h3 class="flex text-5xl text-center leading-tight font-bold mb-14">Уверены что хотите выйти
+                из личного кабинета?</h3>
+            <p class="text-xl text-center mb-16">
+                Закрытый контент недоступен <br> неавторизированным пользователям
+            </p>
+            <div class="flex items-center justify-between max-w-[225px] mx-auto">
+                <div onclick="exit.close()" class="button button-ghost">Назад</div>
+                <a href="./" class="button button-indigo">Выйти <i class="fa-solid fa-angle-right ml-6"></i>
+                </a>
+            </div>
+        </dialog>
+
+        <!-- success registration modal -->
+        <dialog id="successRegister"
+            class="!fixed max-w-[780px] w-full relative rounded-[30px] bg-white p-[17px] pt-[80px] xl:px-[150px] xl:py-[50px]">
+            <div class="button button_small button-ghost absolute top-10
+            right-10" onclick="successRegister.close()">
+                Закрыть <i class="fa-solid fa-xmark ml-10"></i>
+            </div>
+            <img src="../dist/img/icons/success.svg" class="hidden xl:block mx-auto mb-10">
+            <h3 class="flex justify-center text-5xl text-center font-bold mb-10">Вы успешно зарегистрированы!</h3>
+            <p class="text-xl text-center mb-16">
+                Теперь вам доступен закрытый <br> контент и участие в программе <br> лояльности.
+            </p>
+            <a href="/profile" class="button button-indigo mx-auto">Перейти в личный кабинет <i
+                    class="fa-solid fa-angle-right ml-6"></i>
+            </a>
+        </dialog>
+
+        <!-- bill registration modal -->
+        <dialog id="billRegister"
+            class="!fixed max-w-[560px] w-full relative rounded-[30px] bg-white p-[17px] xl:p-[60px] !pt-[80px]">
+            <div class="button button_small button-ghost absolute top-10
+            right-10" onclick="billRegister.close()">
+                Закрыть <i class="fa-solid fa-xmark ml-10"></i>
+            </div>
+            <h3 class="flex justify-center text-5xl font-bold mb-10">Регистрация нового чека</h3>
+            <form class="form-fieldset mb-6" action="#">
+                <label class="mb-6">
+                    <input type="text" class="input" name="bill_number" required placeholder="Введите номер чека">
+                </label>
+                <div class="mb-6">
+                    <input type="file" name="file" id="file" class="file hidden" required>
+                    <label for="file"
+                        class="!flex items-center justify-center cursor-pointer select-none h-[180px] rounded-[30px] w-full bg-[#f2f5f8]">
+                        <div>
+                            <div id="fileLabel"></div>
+                            <span id="fileInfo" class="block mx-auto text-center underline opacity-30">Прикрепить фото
+                                чека</span>
+                        </div>
+                    </label>
+                </div>
+                <button class="button button-indigo w-full px-14 xl:mr-10" type="submit">Зарегистрировать чек</button>
+            </form>
+            <p class="text-xl text-center opacity-30">
+                Есть проблемы? Обратитесь в поддержку по номеру или почте:
+                <a class="block underline" href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
+                <a class="block underline" href="mailto:podderzhka@mail.ru">podderzhka@mail.ru</a>
+            </p>
+            <script>
+                    (function () {
+                        const file = document.querySelector('input[type="file"]');
+                        const fileInfo = document.getElementById('fileInfo');
+                        const fileLabel = document.getElementById('fileLabel');
+
+                        const fileLabelHTML = `<div class="flex justify-center mb-6"><img src="../dist/img/icons/success.svg" class="block w-[21px] mr-4"> Успешно загружено</div>`
+
+                        file.addEventListener('change', (e) => {
+                            e.preventDefault();
+                            const files = e.target.files;
+                            const fileName = files[0].name;
+                            if (!!fileName) {
+                                fileInfo.innerText = fileName;
+                                fileLabel.innerHTML = fileLabelHTML;
+                            }
+                        });
+                    })();
+            </script>
+        </dialog>
+
+        <!-- data changes modal -->
+        <dialog id="dataChanges"
+            class="!fixed max-w-[780px] w-full relative rounded-[30px] bg-white p-[17px] xl:px-[150px] xl:py-[50px] !pt-[80px]">
+            <div class="button button_small button-ghost absolute top-10
+            right-10" onclick="dataChanges.close()">
+                Закрыть <i class="fa-solid fa-xmark ml-10"></i>
+            </div>
+            <h3 class="text-5xl text-center font-bold mb-10">Изменение данных</h3>
+            <p class="text-xl text-center mb-16">
+                Чтобы внести изменения в данные вашего профиля <br> (сменить почтовый адрес или имя пользователя) <br>
+                обратитесь в поддержку.
+            </p>
+            <a class="block text-xl text-center underline" href="mailto:podderzhka@mail.ru">podderzhka@mail.ru</a>
+        </dialog>
+
+        <!-- choose the monster modal -->
+        <dialog id="chooseMonster"
+            class="!fixed max-w-[780px] w-full relative rounded-[30px] bg-white p-[17px] xl:p-[60px] !pt-[70px]">
+            <div class="button button_small button-ghost absolute top-10
+            right-10" onclick="chooseMonster.close()">
+                Закрыть <i class="fa-solid fa-xmark ml-10"></i>
+            </div>
+            <h3 class="text-5xl text-center font-bold mb-10">Выберите своего монстра</h3>
+            <p class="text-xl text-center mb-16">
+                Заполните форму ниже и получите <br> доступ к порталу
+            </p>
+            <div class="flex flex-wrap justify-center xl:flex-row-reverse mb-10">
+                <div class="max-w-[240px] w-full xl:mx-6">
+                    <img src="../dist/img/chydik.jpeg" class="rounded-[30px] mb-6">
+                    <h4 class="text-5xl text-center mb-10">Зубная боль</h4>
+                    <p class="text-xl text-center">Получите бонус</p>
+                </div>
+                <div class="max-w-[240px] w-full xl:mx-6">
+                    <img src="../dist/img/chydik.jpeg" class="rounded-[30px] mb-6">
+                    <h4 class="text-5xl text-center mb-10">Зубная боль</h4>
+                    <p class="text-xl text-center mb-10">Получите бонус</p>
+                    <button class="w-full button button-indigo xl:mr-10 w-full" type="submit">Зарегистрироваться <i
+                            class="fa-solid fa-angle-right ml-6"></i></button>
+                </div>
+            </div>
+        </dialog>
+
+        <!-- quiz modal -->
+        <dialog id="quiz" class="!fixed max-w-[920px] w-full rounded-[30px] bg-white p-[35px]">
+            <div class="button button_small button-blur absolute top-0
+         left-0" onclick="quiz.close()">
+                <i class="fa-solid fa-angle-left"></i>
+                Назад
+            </div>
+            <img src="../dist/img/backgrounds/quiz.jpeg"
+                class="w-full h-[220px] xl:h-[302px] rounded-[30px] object-cover mb-14" />
+
+            <div class="flex justify-center mb-10">
+                <div class="tag tag-ghost h-16 flex items-center !rounded-[10px] mr-4">Тест</div>
+                <div class="tag tag-indigo !rounded-[10px]">Виды боли</div>
+            </div>
+
+            <h3 class="max-w-[512px] w-full mx-auto text-5xl xl:text-7xl leading-snug text-center font-bold mb-10">Как
+                хорошо вы знаете разные виды боли?</h3>
+            <p class="max-w-[512px] w-full mx-auto text-[16px] opacity-60 text-center mb-10">
+                Вот вам яркий пример современных тенденций — курс на социально-ориентированный национальный проект
+                создаёт предпосылки для глубокомысленных рассуждений!
+            </p>
+            <div class="flex items-center justify-center mb-10">
+                <div class="text-2xl mr-4 opacity-60">Время прохождения: : </div>
+                <div class="tag tag-indigo !rounded-[10px]">3 минуты</div>
+            </div>
+            <a href="./pages/quiz.html" class="button button-black mx-auto">Начать прохождение <i class="fa-solid fa-angle-right ml-6"></i>
+            </a>
+        </dialog>
+
+    </body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../dist/js/index.js"></script>
+</html>

@@ -1,0 +1,8 @@
+.quiz {
+    & .block {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.40) 100%), linear-gradient(48deg, #F1EFFF 5.7%, rgba(244, 242, 254, 0.00) 103.13%), linear-gradient(138deg, #F0F4FE 0%, #F1F4FE 122.84%);
+    }
+    & .position {
+        line-height: normal;
+    }
+}

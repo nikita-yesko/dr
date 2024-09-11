@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single post - Dr Reddis</title>
+    <link rel="stylesheet" href="../dist/css/index.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="header" class="header ">
+        <div class="header__inner">
+            <div class="header__content justify-between container">
+                <a href="/" class="header__logo"><span>Планета</span> симптомов</a>
+                <button class="header__menu"></button>
+                <nav class="flex items-center border-[1px] header__nav ">
+                    <li><a href="#">Город Больск</a></li>
+                    <li class="dropdown"><a href="#">Лаборатория<div class="dropdown__arrow"></div></a>
+                        <ul class="dropdown__list">
+                            <li><a href="#">База знаний</a></li>
+                            <li><a href="#">Самоконтроль</a></li>
+                            <li><a href="#">Интерактив</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Аптека</a></li>
+                    <li><a href="#">Программа лояльности</a></li>
+                </nav>
+                <a href="/pages/profile" class="header__profile flex items-center">
+                    <div class="header__profile-icon mr-4 rounded-full flex items-center justify-center w-[40px] h-[40px] bg-blur">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <span class="text-2xl">Вход</span>
+                </a>
+            </button>
+        </div>
+    </header>
+    <main class="main !pt-0">
+        <div class="hero w-[100vw] mt-[65px] pb-[90px] lg:pb-0 lg:mt-0 h-[700px] lg:h-[800px] rounded-t-[30px] lg:rounded-t-[0] rounded-b-[30px] lg:rounded-b-[60px] overflow-hidden lg:flex items-center"
+            style="background: url('../dist/img/backgrounds/quiz.jpeg') no-repeat center; background-size: cover;">
+            <div class="container !max-w-[1063px] flex flex-col items-center xl:block mt-24 lg:mt-0">
+                <div class="flex flex-wrap justify-between flex-col-reverse	lg:flex-row rounded-[30px] p-8 lg:p-24 bg-white shadow-lg">
+                    <div class="w-full lg:w-[59.21%]">
+                        <div class="tag tag-lilac rounded-[10px] mb-10">Ваш результат</div>
+                        <h1 class="title-h2 mb-6">А вы точно не доктор?</h1>
+                        <p class="text-c-normal opacity-70 mb-6 lg:mb-10">
+                            Просто мы даже не знаем, что вам порекомендовать. Вы прекрасно разбираетесь в вопросах, связанных с болью. Так что наверняка встретите знакомых в разделе с симптомами на нашем сайте. А еще вам будет интересно взглянуть на средства, с помощью которых боль можно победить. Хотя, вы и о них наверняка все знаете.  
+                        </p>
+                        <div class="flex flex-wrap">
+                            <a href="" class="w-full sm:w-auto button button-indigo text-[18px] mb-4 py-[15px] sm:mb-0 sm:mr-4">В Аптеку <i class="fa-solid fa-angle-right"></i></a>
+                            <a href="/" class="w-full sm:w-auto button button-black py-[15px] text-[18px]">На главную <i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <img class="w-full lg:w-[38.7%] mb-[22px] lg:mb-0 rounded-[30px]" src="../dist/img/chydik.jpeg">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="footer__wrapper">
+        <section class="footer__warning hidden lg:block absolute bottom-full w-full p-[5rem_0_1.8rem]">
+            <div class="container-big">
+                <div class="footer__warning-text">
+                    ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМО ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ ПО МЕДИЦИНСКОМУ ПРИМЕНЕНИЮ ИЛИ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+                </div>
+            </div>
+        </section>
+        <footer class="footer bg-black">
+            <div class="container-big">
+                <div class="footer__inner">
+                    <div class="footer__top flex flex-wrap justify-between items-start lg:items-center flex-col lg:flex-row">
+                        <div class="footer__top-left flex flex-col lg:flex-row">
+                            <a href="/" class="footer__logo mb-[18px] lg:mb-0"><img src="../dist/img/icons/white-logo.svg" alt="Logo"/></a>
+                            <div class="footer__allowed-age flex items-center justify-center rounded-full mb-[18px] lg:mb-0">7+</div>
+                        </div>
+                        <div class="footer__top-right ">
+                            <div class="footer__social flex items-center">
+                                <div class="footer__social-text">Поделиться:</div>
+                                <ul class="footer__social-list flex items-center">
+                                    <li><a href="#"><img src="../dist/img/icons/ok.svg"/></a></li>
+                                    <li><a href="#"><img src="../dist/img/icons/vk.svg" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__warning-text mb-[20px] lg:hidden">
+                        ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМО ОЗНАКОМИТЬСЯ С ИНСТРУКЦИЕЙ ПО МЕДИЦИНСКОМУ ПРИМЕНЕНИЮ ИЛИ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+                    </div>
+                    <div class="footer__center flex justify-between flex-wrap lg:flex-1">
+                        <ul class="footer__links">
+                            <li><a href="#">Лицензия</a></li>
+                            <li><a href="#">Рекламодатель</a></li>
+                            <li><a href="#">ООО</a></li>
+                        </ul>
+                        <ul class="footer__docs">
+                            <li><a href="#">Политика по работе с персональными данными и конфиденциальности</a></li>
+                            <li><a href="#">Согласие на обработку персональных данных</a></li>
+                            <li><a href="#">Политика использования файлов Cookie ООО «Др. Редди’c Лабороторис»</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__copyright">
+                        <p>Все права защищены <script>document.write(new Date().getFullYear())</script>г.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <button class="footer__top-arrow" data-target="html" id="scroll-to-top" >
+            <img src="../dist/img/icons/arrow-top.svg" alt="Кнопка перемещения наверх страницы">
+        </button>
+    </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../dist/js/index.js"></script>
+
+</html>

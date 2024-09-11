@@ -1,0 +1,164 @@
+.footer {
+    &__wrapper {
+        position: relative;
+        
+    }
+    &__warning {
+        z-index: 1;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(34, 34, 34, 0.00) 91.6%);
+    }
+    &__warning-text {
+        font-family: "InterTight-SemiBold";
+        font-size: 2.8rem;
+        line-height: 3.38rem;
+        text-align: justified;
+        color: #81818199;
+    }
+    &__inner {
+        padding: 3.6rem 0 4rem;
+    }
+    &__top, &__center {
+        margin-bottom: 2.3rem;
+    }
+    &__logo {
+        margin-right: 4rem;
+        &:hover {
+            opacity: .8;
+            transition: all .3s ease;
+        }
+    }
+    &__allowed-age {
+        padding: 1rem;
+        min-width: 5.5rem;
+        width: max-content;
+        height: 5.5rem;
+        max-height: 5.5rem;
+        border-radius: 50%;
+        border: 2px solid #B2B1FF;
+        color: rgb(178, 177, 255);
+        font-family: "InterTight-Medium";
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+        letter-spacing: 0%;
+        text-align: justify;
+    }
+    &__links {
+        a {
+            font-family: "InterTight-Regular";
+            text-align: left;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: rgba(255,255,255,0.3);
+        }
+    }
+    &__docs {
+        li {
+            text-align: right;
+        }
+        a {
+            font-family: "InterTight-Regular";
+            text-align: right;
+            text-decoration: underline;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: rgba(255,255,255,0.3);
+        }
+    }
+    &__copyright {
+        font-family: "InterTight-Regular";
+        text-align: left;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: rgba(255,255,255,0.3);
+    }
+    &__social {
+        &-text {
+            margin-right: 1.2rem;
+            color: rgb(255, 255, 255);
+            font-family: "InterTight-Regular";
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            letter-spacing: 0%;
+            text-align: justify;
+        }
+    }
+    &__social-list {
+        li {
+            margin-right: 1.6rem;
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+    &__top-arrow {
+        display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        bottom: 2rem;
+        right: 1.6rem;
+        width: 4.8rem;
+        height: 4.8rem;
+        z-index: 99;
+        box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.15);
+        background: rgb(39, 39, 39);
+        border-radius: 100%;
+        img {
+            width: 1.6rem;
+        }
+        &:hover {
+            opacity: .8;
+            transition: all .3s ease;
+        }
+        @media (min-width: 190rem) {
+            right: 14.8rem;
+            width: 7.1rem;
+            height: 7.1rem;
+        }
+    }
+    @media (min-width: 1500px) {
+        &__top-arrow {
+            right: 14.8rem;
+        }
+    }
+    @media (max-width: 1023px) {
+        &__inner {
+            padding: 3rem 0 3.5rem;
+        }
+        &__warning-text { 
+            opacity: .3;
+            color: #FFF;
+            text-align: justify;
+            font-family: "InterTight-Regular";
+            font-size: 1rem;
+            line-height: normal;
+        }
+        &__docs {
+            li {
+                text-align: left;
+            }
+            a {
+                font-size: 1.2rem;
+            }
+        }
+        &__links {
+            margin-bottom: 1rem;
+            a {
+                font-size: 1.2rem;
+            }
+        }
+        &__copyright {
+            font-size: 1.2rem;
+        }
+        &__top-arrow {
+            bottom: 2rem;
+            box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(48deg, #F1EFFF 5.7%, rgba(244, 242, 254, 0.00) 103.13%), linear-gradient(138deg, #F0F4FE 0%, #F1F4FE 122.84%);
+        }
+    }
+    @media (max-width: 992px) {
+       
+    }
+}

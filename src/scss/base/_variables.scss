@@ -1,0 +1,56 @@
+:root {
+  --colorMain: #ffffff;
+  --colorTextGrey: #4f4f4f;
+  --colorDarkWhite: #eceef3;
+  --colorLightGrey: #e9ebef;
+  --colorBlue: #badfff;
+  --colorDarkBlue: #24549f;
+  --colorYellow: #f8d250;
+  --colorGrey: #a4a4a4;;
+  --colorDarkGrey: #334d6e;
+  --colorBlack: #000000;
+  --colorGreen: #00c98f;
+  --colorHoverGreen: #05db9d;
+  --colorRed: #ea2b4d;
+  --colorFontBlack: #3d4252;
+  --colorFontWhite: #f1f1f1;
+
+  --buttonWhiteColor: #8B89F0;
+
+  --blur: rgba(255, 255, 255, 0.2);
+
+  --colorGreen: rgb(85, 169, 104);
+  --colorGreenSecondary: rgb(231, 239, 233); 
+
+  --tagIndigo: linear-gradient(47.64deg, rgb(241, 239, 255) 4.62%,rgba(244, 242, 254, 0) 105.713%),linear-gradient(138.04deg, rgb(240, 244, 254) 0%,rgb(241, 244, 254) 116.747%);
+
+  --gradientIndigo: linear-gradient(47.36deg, rgb(194, 182, 255) 4.658%,rgba(177, 161, 255, 0) 105.622%),linear-gradient(138.04deg, rgb(150, 180, 255) 0%,rgb(166, 186, 255) 116.981%);
+  --gradientWhite: linear-gradient(47.36deg, rgb(241, 239, 255) 4.658%,rgba(244, 242, 254, 0) 105.622%),linear-gradient(138.04deg, rgb(240, 244, 254) 0%,rgb(241, 244, 254) 116.981%);
+  --buttonBlackHover: linear-gradient(47.36deg, rgb(194, 182, 255) 4.658%,rgba(177, 161, 255, 0) 105.622%),linear-gradient(138.04deg, rgb(150, 180, 255) 0%,rgb(166, 186, 255) 116.981%);
+  //--buttonBlueHover: linear-gradient(47.36deg, rgb(170, 155, 245) 4.658%,rgba(153, 136, 240, 0) 105.622%),linear-gradient(138.04deg, rgb(118, 150, 230) 0%,rgb(122, 147, 231) 116.981%);
+  --buttonBlueHover: linear-gradient(48deg, #C2B6FF 5.7%, rgba(177, 161, 255, 0.00) 103.13%), linear-gradient(138deg, #96B4FF 0%, #A6BAFF 122.84%);
+  --buttonBackHover: rgba(255, 255, 255, 0.3);
+  --buttonGhostHover: linear-gradient(47.64deg, rgb(194, 182, 255) 4.922%,rgba(177, 161, 255, 0) 104.988%),linear-gradient(138.04deg, rgb(150, 180, 255) 0%,rgb(166, 186, 255) 118.569%);
+
+  --inputBackground: linear-gradient(90deg, rgba(247,245,255,1) 0%, rgba(247,248,254,1) 100%, rgba(247,248,254,1) 100%);;
+  --inputBackgroundFocus: #F2F5F8;
+
+  --shadowDark: linear-gradient(180deg, #1b3d64 0%, #0e2643 8.79%);
+  --shadowDarkMenu: linear-gradient(180deg, #0e3e75 0%, #0e2643 52.79%);
+}
+@custom-media --tb-screen (width >= 537px);
+@custom-media --md-screen (width >= 1023px);
+@custom-media --lg-screen (width >= 1200px);
+@custom-media --xlg-screen (width >= 1500px);
+@custom-media --xxlg-screen (width >= 1921px);
+
+@custom-media --mobile-screen (width <= 537px);
+@custom-media --laptop-screen (width <= 768px);
+@custom-media --desctop-screen (width <= 1200px);
+
+@custom-selector :--heading h1, h2, h3, h4;
+
+:--heading {
+  margin: 0;
+  padding: 0;
+}

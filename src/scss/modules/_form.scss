@@ -1,0 +1,25 @@
+.form-fieldset {
+
+  label {
+    position: relative;
+    display: block;
+
+    input.input, textarea {
+      display: block;
+      width: 100%;
+      background: var(--inputBackground);
+      color: var(--colorGrey);
+      padding: 2rem;
+      border-radius: 2rem;
+      width: 100%;
+      font-size: 1.6rem;
+      border: none;
+      outline: none;
+
+      &:focus {
+        background: var(--inputBackgroundFocus);
+        color: var(--colorBlack);
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.hero {
+  position: relative;
+  &__inner {
+    height: 85vh;
+    overflow: hidden;
+
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 85vh;
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+
+    &>h1 {
+      // font-size: 5.5rem;
+      line-height: 1.2;
+      font-weight: 600;
+      color: var(--colorMain);
+      margin-bottom: 3rem;
+    }
+  }
+ 
+  &-map__wrapper {
+    position: absolute;
+ } 
+  &-map__wrapper svg {
+    width: 100%;
+    height: auto;
+    max-height: unset;
+  }
+  @media (max-width: 1023px) {
+    &-map__block {
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      background-color: #ffffff;
+    }
+    &--map {
+      background-color: #000000;
+    }
+    & {
+      height: unset!important;
+    }
+  }
+  &-articles {
+    & &__description {
+      line-height: 140%;
+    }
+  }
+}
+
+

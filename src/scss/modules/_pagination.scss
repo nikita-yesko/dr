@@ -1,0 +1,22 @@
+.wp-pagenavi {
+  margin-top: 4rem;
+  .pages {
+    border: none;
+    border-bottom: 1px solid var(--colorUSBlue);
+    padding: 1.5rem;
+  }
+
+  .current {
+    border: none;
+    border-bottom: 1px solid var(--colorUSRed) !important;
+    padding: 1.5rem;
+    color: var(--colorUSRed);
+  }
+
+  .page,
+  .nextpostslink {
+    border: none;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--colorUSBlue);
+  }
+}

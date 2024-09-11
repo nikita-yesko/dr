@@ -1,0 +1,16 @@
+.swiper-slide:not(.swiper-slide-active) .profile__card img {
+    opacity: 0.3;
+    filter: blur(10px);
+}
+
+.profile {
+&-cards-slider{
+    .swiper-scrollbar-drag{
+        background: rgba(164, 164, 164, 1);
+    }
+    .swiper-scrollbar{
+        background: rgba(164, 164, 164, 0.2);
+    }
+}
+
+}

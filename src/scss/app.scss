@@ -1,0 +1,28 @@
+@import './mixins/mixins';
+//base
+@import './base/general';
+@import './base/typography';
+@import './base/variables';
+
+//modules
+@import './modules/buttons';
+@import './modules/tags';
+@import './modules/modifiers';
+@import './modules/swiper';
+@import './modules/form';
+@import './modules/pagination';
+@import './modules/notifications';
+
+//components
+@import './components/c-header';
+@import './components/c-hero';
+@import './components/c-blog';
+@import './components/c-map';
+@import './components/c-breadcrumb';
+@import './components/c-article';
+@import './components/c-quiz';
+@import './components/c-footer';
+
+@import './components/c-profile';
+@import './components/c-prizes';
+@import './components/c-winprizes';
